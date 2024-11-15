@@ -1,4 +1,5 @@
 #include "FluHyperLinkButton.h"
+#include <QUrl>
 
 FluHyperLinkButton::FluHyperLinkButton(QString linkUrl, QWidget* parent /* = nullptr*/) : QPushButton(parent), m_linkUrl(linkUrl)
 {
