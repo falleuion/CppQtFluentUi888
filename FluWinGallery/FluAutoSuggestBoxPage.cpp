@@ -17,17 +17,17 @@ FluAutoSuggestBoxPage::FluAutoSuggestBoxPage(QWidget* parent /*= nullptr*/) : Fl
 
     m_vScrollView->getMainLayout()->addWidget(displayBox, 0, Qt::AlignTop);
 
-    FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluAutoSuggestBoxPage.qss", this);
+    FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluAutoSuggestBoxPage.qss", this);
 }
 
 void FluAutoSuggestBoxPage::onThemeChanged()
 {
     if (FluThemeUtils::isLightTheme())
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluAutoSuggestBoxPage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluAutoSuggestBoxPage.qss", this);
     }
     else
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/dark/FluAutoSuggestBoxPage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/dark/FluAutoSuggestBoxPage.qss", this);
     }
 }

@@ -35,10 +35,10 @@ void FluNavigationPage::onThemeChanged()
 {
     if (FluThemeUtils::isLightTheme())
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluNavigationPage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluNavigationPage.qss", this);
     }
     else
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/dark/FluNavigationPage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/dark/FluNavigationPage.qss", this);
     }
 }

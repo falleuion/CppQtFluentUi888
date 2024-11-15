@@ -10,7 +10,7 @@ FluMenuBarPage::FluMenuBarPage(QWidget* parent /*= nullptr*/) : FluAEmptyPage(pa
 
     addMenuBarWithAccelerators();
 
-    FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluMenuBarPage.qss", this);
+    FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluMenuBarPage.qss", this);
 }
 
 void FluMenuBarPage::addSimpleMenuBar()
@@ -125,10 +125,10 @@ void FluMenuBarPage::onThemeChanged()
 {
     if (FluThemeUtils::isLightTheme())
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluMenuBarPage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluMenuBarPage.qss", this);
     }
     else
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/dark/FluMenuBarPage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/dark/FluMenuBarPage.qss", this);
     }
 }

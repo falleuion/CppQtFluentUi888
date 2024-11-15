@@ -25,17 +25,17 @@ FluCollectionsPage::FluCollectionsPage(QWidget* parent /*= nullptr*/) : FluATitl
     getFWScrollView()->getMainLayout()->addWidget(tableViewCard);
     connect(tableViewCard, &FluHCard::clicked, [=](QString key) { emit clickedHCard(key); });
 
-    FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluCollectionsPage.qss", this);
+    FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluCollectionsPage.qss", this);
 }
 
 void FluCollectionsPage::onThemeChanged()
 {
     if (FluThemeUtils::isLightTheme())
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluCollectionsPage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluCollectionsPage.qss", this);
     }
     else
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/dark/FluCollectionsPage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/dark/FluCollectionsPage.qss", this);
     }
 }

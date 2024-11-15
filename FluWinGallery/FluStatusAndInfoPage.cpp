@@ -30,17 +30,17 @@ FluStatusAndInfoPage::FluStatusAndInfoPage(QWidget* parent /*= nullptr*/) : FluA
     getFWScrollView()->getMainLayout()->addWidget(toolTipCard);
     connect(toolTipCard, &FluHCard::clicked, [=](QString key) { emit clickedHCard(key); });
 
-    FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluStatusAndInfoPage.qss", this);
+    FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluStatusAndInfoPage.qss", this);
 }
 
 void FluStatusAndInfoPage::onThemeChanged()
 {
     if (FluThemeUtils::isLightTheme())
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluStatusAndInfoPage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluStatusAndInfoPage.qss", this);
     }
     else
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/dark/FluStatusAndInfoPage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/dark/FluStatusAndInfoPage.qss", this);
     }
 }

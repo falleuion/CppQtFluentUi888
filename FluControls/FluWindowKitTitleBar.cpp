@@ -5,7 +5,7 @@ FluWindowKitTitleBar::FluWindowKitTitleBar(QWidget* parent /*= nullptr*/) : QFra
 {
     m_w = nullptr;
     init();
-    FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluWindowKitTitleBar.qss", this);
+    FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluWindowKitTitleBar.qss", this);
 }
 
 void FluWindowKitTitleBar::init()

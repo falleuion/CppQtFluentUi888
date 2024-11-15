@@ -98,11 +98,11 @@ void FluSearchLineEdit::onThemeChanged()
     if (FluThemeUtils::isLightTheme())
     {
         m_btn->setIcon(FluIconUtils::getFluentIcon(FluAwesomeType::Search, FluTheme::Light));
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluSearchLineEdit.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluSearchLineEdit.qss", this);
     }
     else
     {
         m_btn->setIcon(FluIconUtils::getFluentIcon(FluAwesomeType::Search, FluTheme::Dark));
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/dark/FluSearchLineEdit.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/dark/FluSearchLineEdit.qss", this);
     }
 }

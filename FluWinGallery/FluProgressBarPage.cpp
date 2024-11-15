@@ -19,17 +19,17 @@ FluProgressBarPage::FluProgressBarPage(QWidget* parent /*= nullptr*/) : FluAEmpt
     // progressRing1->setWorking(true);
 
     m_vScrollView->getMainLayout()->addWidget(displayBox1, 0, Qt::AlignTop);
-    FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluProgressBarPage.qss", this);
+    FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluProgressBarPage.qss", this);
 }
 
 void FluProgressBarPage::onThemeChanged()
 {
     if (FluThemeUtils::isLightTheme())
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluProgressBarPage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluProgressBarPage.qss", this);
     }
     else
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/dark/FluProgressBarPage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/dark/FluProgressBarPage.qss", this);
     }
 }

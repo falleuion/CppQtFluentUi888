@@ -6,7 +6,7 @@ FluButtonPage::FluButtonPage(QWidget* parent /*= nullptr*/) : FluAEmptyPage(pare
     m_titleLabel->setText("Button");
     // m_subTitleLabel->setText("CppQtFluentUi888::FluCheckButton");
     m_infoLabel->setText("This Page display Button examples.");
-    FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluButtonPage.qss", this);
+    FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluButtonPage.qss", this);
 
     auto displayBox1 = new FluDisplayBoxEx;
     //  displayBox1->setFixedHeight(140);
@@ -47,10 +47,10 @@ void FluButtonPage::onThemeChanged()
 {
     if (FluThemeUtils::isLightTheme())
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluButtonPage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluButtonPage.qss", this);
     }
     else
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/dark/FluButtonPage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/dark/FluButtonPage.qss", this);
     }
 }

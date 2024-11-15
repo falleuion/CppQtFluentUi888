@@ -42,17 +42,17 @@ FluRadioButtonsPage::FluRadioButtonsPage(QWidget* parent /*= nullptr*/) : FluAEm
     displayBox->getBodyLayout()->addWidget(border, Qt::AlignTop);
 
     m_vScrollView->getMainLayout()->addWidget(displayBox, 0, Qt::AlignTop);
-    FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluRadioButtonsPage.qss", this);
+    FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluRadioButtonsPage.qss", this);
 }
 
 void FluRadioButtonsPage::onThemeChanged()
 {
     if (FluThemeUtils::isLightTheme())
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluRadioButtonsPage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluRadioButtonsPage.qss", this);
     }
     else
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/dark/FluRadioButtonsPage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/dark/FluRadioButtonsPage.qss", this);
     }
 }

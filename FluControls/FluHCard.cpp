@@ -75,10 +75,10 @@ void FluHCard::onThemeChanged()
 {
     if (FluThemeUtils::isLightTheme())
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluHCard.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluHCard.qss", this);
     }
     else
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/dark/FluHCard.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/dark/FluHCard.qss", this);
     }
 }

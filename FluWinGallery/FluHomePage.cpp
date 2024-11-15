@@ -75,7 +75,7 @@ FluHomePage::FluHomePage(QWidget *parent /*= nullptr*/) : FluVScrollView(parent)
     recentlyAddedSamplesLabel->setObjectName("recentlyAddedSamplesLabel");
     recentlyUpdatedSamplesLabel->setObjectName("recentlyUpdatedSamplesLabel");
 
-    QString qss = FluStyleSheetUitls::getQssByFileName("../StyleSheet/light/FluHomePage.qss");
+    QString qss = FluStyleSheetUitls::getQssByFileName("./StyleSheet/light/FluHomePage.qss");
     setStyleSheet(qss);
     connect(FluThemeUtils::getUtils(), &FluThemeUtils::themeChanged, [=](FluTheme theme) { onThemeChanged(); });
 }
@@ -84,10 +84,10 @@ void FluHomePage::onThemeChanged()
 {
     if (FluThemeUtils::isLightTheme())
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluHomePage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluHomePage.qss", this);
     }
     else
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/dark/FluHomePage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/dark/FluHomePage.qss", this);
     }
 }

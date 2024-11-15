@@ -41,17 +41,17 @@ FluPivotPage::FluPivotPage(QWidget* parent /*= nullptr*/) : FluAEmptyPage(parent
     displayBox->getBodyLayout()->addWidget(pivot);
 
     m_vScrollView->getMainLayout()->addWidget(displayBox, 0, Qt::AlignTop);
-    FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluPivotPage.qss", this);
+    FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluPivotPage.qss", this);
 }
 
 void FluPivotPage::onThemeChanged()
 {
     if (FluThemeUtils::isLightTheme())
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluPivotPage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluPivotPage.qss", this);
     }
     else
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/dark/FluPivotPage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/dark/FluPivotPage.qss", this);
     }
 }

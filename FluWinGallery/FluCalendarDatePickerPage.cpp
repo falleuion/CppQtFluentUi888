@@ -16,17 +16,17 @@ FluCalendarDatePickerPage::FluCalendarDatePickerPage(QWidget* parent /*= nullptr
     calendarView->move(50, 50);
 
     m_vScrollView->getMainLayout()->addWidget(displayBox, 0, Qt::AlignTop);
-    FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluCalendarDatePickerPage.qss", this);
+    FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluCalendarDatePickerPage.qss", this);
 }
 
 void FluCalendarDatePickerPage::onThemeChanged()
 {
     if (FluThemeUtils::isLightTheme())
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluCalendarDatePickerPage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluCalendarDatePickerPage.qss", this);
     }
     else
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/dark/FluCalendarDatePickerPage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/dark/FluCalendarDatePickerPage.qss", this);
     }
 }

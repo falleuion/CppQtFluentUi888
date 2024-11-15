@@ -16,17 +16,17 @@ FluDatePickerPage::FluDatePickerPage(QWidget* parent /*= nullptr*/) : FluAEmptyP
 
     m_vScrollView->getMainLayout()->addWidget(displayBox1, 0, Qt::AlignTop);
 
-    FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluDatePickerPage.qss", this);
+    FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluDatePickerPage.qss", this);
 }
 
 void FluDatePickerPage::onThemeChanged()
 {
     if (FluThemeUtils::isLightTheme())
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluDatePickerPage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluDatePickerPage.qss", this);
     }
     else
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/dark/FluDatePickerPage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/dark/FluDatePickerPage.qss", this);
     }
 }

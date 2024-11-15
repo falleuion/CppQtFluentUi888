@@ -5,7 +5,7 @@ FluTextBoxPage::FluTextBoxPage(QWidget* parent /*= nullptr*/) : FluAEmptyPage(pa
     m_mainLayout->setAlignment(Qt::AlignTop);
     m_titleLabel->setText("TextBox");
     m_infoLabel->setText("Use a TextBox to let a user enter simple text input in your app. You can add a header and placeholder text to let the user know what the TextBox is for,and you can customize it in other way.");
-    FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluTextBoxPage.qss", this);
+    FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluTextBoxPage.qss", this);
 
     auto displayBox1 = new FluDisplayBox;
     displayBox1->setTitle("A multi-line TextBox");
@@ -26,10 +26,10 @@ void FluTextBoxPage::onThemeChanged()
 {
     if (FluThemeUtils::isLightTheme())
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluTextBoxPage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluTextBoxPage.qss", this);
     }
     else
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/dark/FluTextBoxPage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/dark/FluTextBoxPage.qss", this);
     }
 }

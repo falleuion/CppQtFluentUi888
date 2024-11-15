@@ -23,10 +23,10 @@ void FluLineEdit::onThemeChanged()
 {
     if (FluThemeUtils::isLightTheme())
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluLineEdit.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluLineEdit.qss", this);
     }
     else
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/dark/FluLineEdit.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/dark/FluLineEdit.qss", this);
     }
 }

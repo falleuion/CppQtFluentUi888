@@ -6,7 +6,7 @@ FluDropDownButtonPage::FluDropDownButtonPage(QWidget* parent /*= nullptr*/) : Fl
     m_titleLabel->setText("DropDownButton");
     // m_subTitleLabel->setText("CppQtFluentUi888::FluDropDownButton");
     m_infoLabel->setText("A control that drops down a flyout of chices from which one can be chosen.");
-    FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluDropDownButtonPage.qss", this);
+    FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluDropDownButtonPage.qss", this);
 
     auto displayBox1 = new FluDisplayBox;
     displayBox1->setTitle("Simple DropDownButton");
@@ -43,10 +43,10 @@ void FluDropDownButtonPage::onThemeChanged()
 {
     if (FluThemeUtils::isLightTheme())
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluDropDownButtonPage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluDropDownButtonPage.qss", this);
     }
     else
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/dark/FluDropDownButtonPage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/dark/FluDropDownButtonPage.qss", this);
     }
 }

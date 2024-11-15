@@ -28,10 +28,10 @@ void FluScrollViewPage::onThemeChanged()
 {
     if (FluThemeUtils::isLightTheme())
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluScrollViewPage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluScrollViewPage.qss", this);
     }
     else
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/dark/FluScrollViewPage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/dark/FluScrollViewPage.qss", this);
     }
 }

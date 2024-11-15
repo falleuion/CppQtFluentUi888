@@ -68,10 +68,10 @@ void FluDisplayBox::onThemeChanged()
 {
     if (FluThemeUtils::isLightTheme())
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluDisplayBox.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluDisplayBox.qss", this);
     }
     else
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/dark/FluDisplayBox.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/dark/FluDisplayBox.qss", this);
     }
 }

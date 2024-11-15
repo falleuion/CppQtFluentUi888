@@ -25,17 +25,17 @@ FluDateAndTimePage::FluDateAndTimePage(QWidget* parent /*= nullptr*/) : FluATitl
     getFWScrollView()->getMainLayout()->addWidget(timePickerCard);
     connect(timePickerCard, &FluHCard::clicked, [=](QString key) { emit clickedHCard(key); });
 
-    FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluDateAndTimePage.qss", this);
+    FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluDateAndTimePage.qss", this);
 }
 
 void FluDateAndTimePage::onThemeChanged()
 {
     if (FluThemeUtils::isLightTheme())
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluDateAndTimePage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluDateAndTimePage.qss", this);
     }
     else
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/dark/FluDateAndTimePage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/dark/FluDateAndTimePage.qss", this);
     }
 }

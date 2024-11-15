@@ -26,7 +26,7 @@ FluAllSamplesPage::FluAllSamplesPage(QWidget* parent /*= nullptr*/) : FluATitleP
         connect(card, &FluHCard::clicked, [=](QString key) { emit clickedHCard(key); });
     }
 
-    FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluAllSamplesPage.qss", this);
+    FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluAllSamplesPage.qss", this);
 }
 
 void FluAllSamplesPage::makeBasicInputCards()
@@ -363,10 +363,10 @@ void FluAllSamplesPage::onThemeChanged()
 {
     if (FluThemeUtils::isLightTheme())
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluAllSamplesPage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluAllSamplesPage.qss", this);
     }
     else
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/dark/FluAllSamplesPage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/dark/FluAllSamplesPage.qss", this);
     }
 }

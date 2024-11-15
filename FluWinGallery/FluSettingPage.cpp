@@ -110,7 +110,7 @@ FluSettingPage::FluSettingPage(QWidget* parent /*= nullptr*/) : FluWidget(parent
 
     m_vScrollView->getMainLayout()->addWidget(settingsVersionBox);
 
-    FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluSettingPage.qss", this);
+    FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluSettingPage.qss", this);
 }
 
 void FluSettingPage::paintEvent(QPaintEvent* event)
@@ -125,10 +125,10 @@ void FluSettingPage::onThemeChanged()
 {
     if (FluThemeUtils::isLightTheme())
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluSettingPage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluSettingPage.qss", this);
     }
     else
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/dark/FluSettingPage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/dark/FluSettingPage.qss", this);
     }
 }

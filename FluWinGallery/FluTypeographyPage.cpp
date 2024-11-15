@@ -65,7 +65,7 @@ FluTypeographyPage::FluTypeographyPage(QWidget* parent /*= nullptr*/) : FluAEmpt
     expander->setCodeText(code);
     m_vScrollView->getMainLayout()->addWidget(expander);
 
-    FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluTypeographyPage.qss", this);
+    FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluTypeographyPage.qss", this);
 }
 
 QWidget* FluTypeographyPage::addARow(FluLabelStyle labelStyle, QString text1, QString text2, QString text3, QString text4, int nHeight)
@@ -110,13 +110,13 @@ void FluTypeographyPage::onThemeChanged()
         pixmap = pixmap.scaled(740, 450, Qt::IgnoreAspectRatio, Qt::SmoothTransformation);
         m_imgLabel->setPixmap(pixmap);
 
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluTypeographyPage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluTypeographyPage.qss", this);
     }
     else
     {
         QPixmap pixmap = QPixmap("../res/Typography.dark.png");
         pixmap = pixmap.scaled(740, 450, Qt::IgnoreAspectRatio, Qt::SmoothTransformation);
         m_imgLabel->setPixmap(pixmap);
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/dark/FluTypeographyPage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/dark/FluTypeographyPage.qss", this);
     }
 }

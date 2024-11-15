@@ -29,7 +29,7 @@ FluGalleryWindow::FluGalleryWindow(QWidget *parent /*= nullptr*/) : FluFrameLess
     m_titleBar->chromePalette()->setTitleBarInactiveForegroundColor(Qt::black);
     m_titleBar->setFixedHeight(48);
 
-    QString qss = FluStyleSheetUitls::getQssByFileName("../StyleSheet/light/FluGalleryWindow.qss");
+    QString qss = FluStyleSheetUitls::getQssByFileName("./StyleSheet/light/FluGalleryWindow.qss");
     setStyleSheet(qss);
 
     m_navView = new FluVNavigationView(this);
@@ -857,7 +857,7 @@ void FluGalleryWindow::onThemeChanged()
         // m_titleBar->update();
         // m_titleBar->style()->polish(m_titleBar);
         m_titleBar->show();
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluGalleryWindow.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluGalleryWindow.qss", this);
         // repaint();
         // QApplication::processEvents();
     }
@@ -875,7 +875,7 @@ void FluGalleryWindow::onThemeChanged()
         m_titleBar->maximizeButton()->setActiveForegroundColor(Qt::white);
 #endif
         m_titleBar->show();
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/dark/FluGalleryWindow.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/dark/FluGalleryWindow.qss", this);
         // repaint();
         // QApplication::processEvents();
     }

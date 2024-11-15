@@ -74,8 +74,8 @@ FluAEmptyPage::FluAEmptyPage(QWidget* parent /*= nullptr*/) : FluWidget(parent)
     m_vScrollView->getMainLayout()->addWidget(m_infoLabel, 0, Qt::AlignTop);
     m_vScrollView->getMainLayout()->addSpacing(20);
 
-    FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluAEmptyPage.qss", this);
-    // FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluAEmptyPage.qss", m_vScrollView);
+    FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluAEmptyPage.qss", this);
+    // FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluAEmptyPage.qss", m_vScrollView);
 }
 
 void FluAEmptyPage::paintEvent(QPaintEvent* event)

@@ -119,11 +119,11 @@ void FluAppBarToggleButton::onThemeChanged()
 {
     if (FluThemeUtils::isLightTheme())
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluAppBarToggleButton.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluAppBarToggleButton.qss", this);
     }
     else
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/dark/FluAppBarToggleButton.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/dark/FluAppBarToggleButton.qss", this);
     }
 
     updateIcon();

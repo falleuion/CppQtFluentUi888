@@ -15,17 +15,17 @@ FluRatingControlPage::FluRatingControlPage(QWidget* parent /*= nullptr*/) : FluA
     displayBox->getBodyLayout()->addWidget(ratingControl);
 
     m_vScrollView->getMainLayout()->addWidget(displayBox, 0, Qt::AlignTop);
-    FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluRatingControlPage.qss", this);
+    FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluRatingControlPage.qss", this);
 }
 
 void FluRatingControlPage::onThemeChanged()
 {
     if (FluThemeUtils::isLightTheme())
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluRatingControlPage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluRatingControlPage.qss", this);
     }
     else
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/dark/FluRatingControlPage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/dark/FluRatingControlPage.qss", this);
     }
 }

@@ -39,17 +39,17 @@ FluListViewPage::FluListViewPage(QWidget* parent /*= nullptr*/) : FluAEmptyPage(
     displayBox1->getBodyLayout()->addWidget(listView);
 
     m_vScrollView->getMainLayout()->addWidget(displayBox1, 0, Qt::AlignTop);
-    FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluListViewPage.qss", this);
+    FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluListViewPage.qss", this);
 }
 
 void FluListViewPage::onThemeChanged()
 {
     if (FluThemeUtils::isLightTheme())
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluListViewPage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluListViewPage.qss", this);
     }
     else
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/dark/FluListViewPage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/dark/FluListViewPage.qss", this);
     }
 }

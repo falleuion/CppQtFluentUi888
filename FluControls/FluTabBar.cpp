@@ -24,7 +24,7 @@ FluTabBar::FluTabBar(QWidget* parent /*= nullptr*/) : FluWidget(parent)
 
     connect(m_addTabBtn, &QPushButton::clicked, [=]() { emit addTabBtnClicked(); });
 
-    FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluTabBar.qss", this);
+    FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluTabBar.qss", this);
 }
 
 std::vector<FluTabBarItem*> FluTabBar::getTabBarItems()

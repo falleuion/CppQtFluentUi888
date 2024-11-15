@@ -18,10 +18,10 @@ void FluHSplitLine::onThemeChanged()
 {
     if (FluThemeUtils::isLightTheme())
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluHSplitLine.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluHSplitLine.qss", this);
     }
     else
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/dark/FluHSplitLine.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/dark/FluHSplitLine.qss", this);
     }
 }

@@ -10,7 +10,7 @@ FluAppBarButtonPage::FluAppBarButtonPage(QWidget* parent /*= nullptr*/) : FluAEm
         "-You use the Label and Icon properties to set the content instead of the content property.The Content property is ignored.\n"
         "-The button's IsCompact property control its size.");
 
-    FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluAppBarButtonPage.qss", this);
+    FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluAppBarButtonPage.qss", this);
 
     addSymbolIconAppBarButton();
     addKeyboardAcceleratorAppBarButton();
@@ -49,10 +49,10 @@ void FluAppBarButtonPage::onThemeChanged()
 {
     if (FluThemeUtils::isLightTheme())
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluAppBarButtonPage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluAppBarButtonPage.qss", this);
     }
     else
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/dark/FluAppBarButtonPage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/dark/FluAppBarButtonPage.qss", this);
     }
 }

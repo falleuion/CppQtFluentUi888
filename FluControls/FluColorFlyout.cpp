@@ -62,10 +62,10 @@ void FluColorFlyout::onThemeChanged()
 {
     if (FluThemeUtils::isLightTheme())
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluColorFlyout.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluColorFlyout.qss", this);
     }
     else
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/dark/FluColorFlyout.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/dark/FluColorFlyout.qss", this);
     }
 }

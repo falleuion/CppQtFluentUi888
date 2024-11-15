@@ -11,7 +11,7 @@ FluNumberBoxPage::FluNumberBoxPage(QWidget* parent /*= nullptr*/) : FluAEmptyPag
 
     addDoubleSpinBox();
 
-    FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluNumberBoxPage.qss", this);
+    FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluNumberBoxPage.qss", this);
 }
 
 void FluNumberBoxPage::addSpinBox()
@@ -44,10 +44,10 @@ void FluNumberBoxPage::onThemeChanged()
 {
     if (FluThemeUtils::isLightTheme())
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluNumberBoxPage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluNumberBoxPage.qss", this);
     }
     else
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/dark/FluNumberBoxPage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/dark/FluNumberBoxPage.qss", this);
     }
 }

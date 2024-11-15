@@ -30,17 +30,17 @@ FluPasswordBoxPage::FluPasswordBoxPage(QWidget* parent /*= nullptr*/) : FluAEmpt
     displayBox2->getBodyLayout()->addWidget(passwordBox2);
     m_vScrollView->getMainLayout()->addWidget(displayBox2, 0, Qt::AlignTop);
 
-    FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluPasswordBoxPage.qss", this);
+    FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluPasswordBoxPage.qss", this);
 }
 
 void FluPasswordBoxPage::onThemeChanged()
 {
     if (FluThemeUtils::isLightTheme())
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluPasswordBoxPage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluPasswordBoxPage.qss", this);
     }
     else
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/dark/FluPasswordBoxPage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/dark/FluPasswordBoxPage.qss", this);
     }
 }

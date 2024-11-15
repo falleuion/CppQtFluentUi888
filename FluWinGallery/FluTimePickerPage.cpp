@@ -23,17 +23,17 @@ FluTimePickerPage::FluTimePickerPage(QWidget* parent /*= nullptr*/) : FluAEmptyP
     displayBox2->getBodyLayout()->addWidget(timePicker24H);
     m_vScrollView->getMainLayout()->addWidget(displayBox2, 0, Qt::AlignTop);
 
-    FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluTimePickerPage.qss", this);
+    FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluTimePickerPage.qss", this);
 }
 
 void FluTimePickerPage::onThemeChanged()
 {
     if (FluThemeUtils::isLightTheme())
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluTimePickerPage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluTimePickerPage.qss", this);
     }
     else
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/dark/FluTimePickerPage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/dark/FluTimePickerPage.qss", this);
     }
 }

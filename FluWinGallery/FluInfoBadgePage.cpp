@@ -31,17 +31,17 @@ FluInfoBadgePage::FluInfoBadgePage(QWidget* parent /*= nullptr*/) : FluAEmptyPag
 
     m_vScrollView->getMainLayout()->addWidget(displayBox, 0, Qt::AlignTop);
 
-    FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluInfoBadgePage.qss", this);
+    FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluInfoBadgePage.qss", this);
 }
 
 void FluInfoBadgePage::onThemeChanged()
 {
     if (FluThemeUtils::isLightTheme())
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluInfoBadgePage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluInfoBadgePage.qss", this);
     }
     else
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/dark/FluInfoBadgePage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/dark/FluInfoBadgePage.qss", this);
     }
 }

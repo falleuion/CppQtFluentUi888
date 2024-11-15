@@ -289,7 +289,7 @@ FluHNavigationViewDemo::FluHNavigationViewDemo(QWidget* parent /*= nullptr*/) : 
     bodyWidget->setObjectName("bodyWidget");
     m_contentLayout->addWidget(bodyWidget);
 
-    FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluHNavigationDemo.qss", this);
+    FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluHNavigationDemo.qss", this);
     connect(FluThemeUtils::getUtils(), &FluThemeUtils::themeChanged, [=](FluTheme theme) { onThemeChanged(); });
     resize(800, 600);
 }
@@ -310,7 +310,7 @@ void FluHNavigationViewDemo::onThemeChanged()
         // m_titleBar->update();
         // m_titleBar->style()->polish(m_titleBar);
         m_titleBar->show();
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluHNavigationDemo.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluHNavigationDemo.qss", this);
         // repaint();
         // QApplication::processEvents();
     }
@@ -328,7 +328,7 @@ void FluHNavigationViewDemo::onThemeChanged()
         m_titleBar->maximizeButton()->setActiveForegroundColor(Qt::white);
 #endif
         m_titleBar->show();
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/dark/FluHNavigationDemo.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/dark/FluHNavigationDemo.qss", this);
         // repaint();
         // QApplication::processEvents();
     }

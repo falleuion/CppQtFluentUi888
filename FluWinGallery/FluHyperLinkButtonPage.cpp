@@ -6,7 +6,7 @@ FluHyperLinkButtonPage::FluHyperLinkButtonPage(QWidget* parent /*= nullptr*/) : 
     m_titleLabel->setText("HyperLinkButton");
     // m_subTitleLabel->setText("CppQtFluentUi888::FluHyperLinkButton");
     m_infoLabel->setText("A HyperlinkButton appears as a text hyperlink. When a user clicks it, it opens the page you specify in the uri property in the default browser.Or your can handle its Click event, typically to navigate within your app.");
-    FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluHyperLinkButtonPage.qss", this);
+    FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluHyperLinkButtonPage.qss", this);
 
     auto displayBox1 = new FluDisplayBox;
     displayBox1->setTitle("A hyperlink button with a Url.");
@@ -25,10 +25,10 @@ void FluHyperLinkButtonPage::onThemeChanged()
 {
     if (FluThemeUtils::isLightTheme())
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluHyperLinkButtonPage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluHyperLinkButtonPage.qss", this);
     }
     else
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/dark/FluHyperLinkButtonPage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/dark/FluHyperLinkButtonPage.qss", this);
     }
 }

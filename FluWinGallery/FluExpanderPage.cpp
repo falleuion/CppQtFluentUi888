@@ -12,7 +12,7 @@ FluExpanderPage::FluExpanderPage(QWidget* parent /*= nullptr*/) : FluAEmptyPage(
     addExpanderDemo2();
     addExpanderDemo3();
 
-    FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluExpanderPage.qss", this);
+    FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluExpanderPage.qss", this);
 }
 
 void FluExpanderPage::addExpanderDemo1()
@@ -93,10 +93,10 @@ void FluExpanderPage::onThemeChanged()
 {
     if (FluThemeUtils::isLightTheme())
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluExpanderPage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluExpanderPage.qss", this);
     }
     else
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/dark/FluExpanderPage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/dark/FluExpanderPage.qss", this);
     }
 }

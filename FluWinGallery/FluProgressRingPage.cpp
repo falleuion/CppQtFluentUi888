@@ -14,7 +14,7 @@ FluProgressRingPage::FluProgressRingPage(QWidget* parent /*= nullptr*/) : FluAEm
 
     addBusyRing();
 
-    FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluProgressRingPage.qss", this);
+    FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluProgressRingPage.qss", this);
 }
 
 void FluProgressRingPage::addIndeterminateProgressRing()
@@ -119,10 +119,10 @@ void FluProgressRingPage::onThemeChanged()
 {
     if (FluThemeUtils::isLightTheme())
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluProgressRingPage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluProgressRingPage.qss", this);
     }
     else
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/dark/FluProgressRingPage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/dark/FluProgressRingPage.qss", this);
     }
 }

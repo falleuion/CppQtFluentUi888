@@ -16,17 +16,17 @@ FluCalendarViewPage::FluCalendarViewPage(QWidget* parent /*= nullptr*/) : FluAEm
     calendarView->move(50, 50);
 
     m_vScrollView->getMainLayout()->addWidget(displayBox, 0, Qt::AlignTop);
-    FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluCalendarViewPage.qss", this);
+    FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluCalendarViewPage.qss", this);
 }
 
 void FluCalendarViewPage::onThemeChanged()
 {
     if (FluThemeUtils::isLightTheme())
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluCalendarViewPage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluCalendarViewPage.qss", this);
     }
     else
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/dark/FluCalendarViewPage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/dark/FluCalendarViewPage.qss", this);
     }
 }

@@ -83,17 +83,17 @@ FluBasicInputPage::FluBasicInputPage(QWidget* parent /*= nullptr*/) : FluATitleP
     getFWScrollView()->getMainLayout()->addWidget(toggleSwitchCard);
     connect(toggleSwitchCard, &FluHCard::clicked, [=](QString key) { emit clickedHCard(key); });
 
-    FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluBasicInputPage.qss", this);
+    FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluBasicInputPage.qss", this);
 }
 
 void FluBasicInputPage::onThemeChanged()
 {
     if (FluThemeUtils::isLightTheme())
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluBasicInputPage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluBasicInputPage.qss", this);
     }
     else
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/dark/FluBasicInputPage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/dark/FluBasicInputPage.qss", this);
     }
 }

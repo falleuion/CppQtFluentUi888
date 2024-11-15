@@ -53,7 +53,7 @@ class FluHomePageTitle : public FluWidget
             m_githubCard->setIcon(QPixmap("../res/HomeHeaderTiles/github-mark.png"));
             m_color1 = QColor(206, 216, 228);
             m_color2 = QColor(223, 231, 240);
-            FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluHomePageTitle.qss", this);
+            FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluHomePageTitle.qss", this);
             update();
         }
         else
@@ -61,7 +61,7 @@ class FluHomePageTitle : public FluWidget
             m_githubCard->setIcon(QPixmap("../res/HomeHeaderTiles/github-mark-white.png"));
             m_color1 = QColor(0, 0, 0);
             m_color2 = QColor(39, 39, 39);
-            FluStyleSheetUitls::setQssByFileName("../StyleSheet/dark/FluHomePageTitle.qss", this);
+            FluStyleSheetUitls::setQssByFileName("./StyleSheet/dark/FluHomePageTitle.qss", this);
             update();
         }
     }

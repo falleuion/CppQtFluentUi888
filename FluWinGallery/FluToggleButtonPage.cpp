@@ -18,17 +18,17 @@ FluToggleButtonPage::FluToggleButtonPage(QWidget* parent /*= nullptr*/) : FluAEm
     displayBox1->getBodyLayout()->addWidget(btn1);
     m_vScrollView->getMainLayout()->addWidget(displayBox1, 0, Qt::AlignTop);
 
-    FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluToggleButtonPage.qss", this);
+    FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluToggleButtonPage.qss", this);
 }
 
 void FluToggleButtonPage::onThemeChanged()
 {
     if (FluThemeUtils::isLightTheme())
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluToggleButtonPage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluToggleButtonPage.qss", this);
     }
     else
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/dark/FluToggleButtonPage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/dark/FluToggleButtonPage.qss", this);
     }
 }

@@ -39,7 +39,7 @@ FluBorderPage::FluBorderPage(QWidget* parent /*= nullptr*/) : FluAEmptyPage(pare
     displayBox->getBodyRightLayout()->addWidget(group);
 
     m_vScrollView->getMainLayout()->addWidget(displayBox, 0, Qt::AlignTop);
-    FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluBorderPage.qss", this);
+    FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluBorderPage.qss", this);
 }
 
 void FluBorderPage::onThemeChanged()
@@ -50,11 +50,11 @@ void FluBorderPage::onThemeChanged()
             m_border->setTExtColor(Qt::black);
         else
             m_border->setTExtColor(Qt::white);
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluBorderPage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluBorderPage.qss", this);
     }
     else
     {
         m_border->setTExtColor(Qt::white);
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/dark/FluBorderPage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/dark/FluBorderPage.qss", this);
     }
 }

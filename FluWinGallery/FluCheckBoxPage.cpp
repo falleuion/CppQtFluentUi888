@@ -30,17 +30,17 @@ FluCheckBoxPage::FluCheckBoxPage(QWidget* parent /*= nullptr*/) : FluAEmptyPage(
     displayBox2->getBodyLayout()->addWidget(checkBox2);
     m_vScrollView->getMainLayout()->addWidget(displayBox2, 0, Qt::AlignTop);
 
-    FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluCheckBoxPage.qss", this);
+    FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluCheckBoxPage.qss", this);
 }
 
 void FluCheckBoxPage::onThemeChanged()
 {
     if (FluThemeUtils::isLightTheme())
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluCheckBoxPage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluCheckBoxPage.qss", this);
     }
     else
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/dark/FluCheckBoxPage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/dark/FluCheckBoxPage.qss", this);
     }
 }

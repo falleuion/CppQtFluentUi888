@@ -85,11 +85,11 @@ class FluTimePicker24H : public FluWidget
     {
         if (FluThemeUtils::isLightTheme())
         {
-            FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluTimePicker24H.qss", this);
+            FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluTimePicker24H.qss", this);
         }
         else
         {
-            FluStyleSheetUitls::setQssByFileName("../StyleSheet/dark/FluTimePicker24H.qss", this);
+            FluStyleSheetUitls::setQssByFileName("./StyleSheet/dark/FluTimePicker24H.qss", this);
         }
     }
 

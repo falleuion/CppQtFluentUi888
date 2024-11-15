@@ -8,7 +8,7 @@ FluAppBarToggleButtonPage::FluAppBarToggleButtonPage(QWidget* parent /*= nullptr
         "An AppBarToggleButton looks like an AppBarButton, but works like a CheckBox. It typically has two state, checked(on) or unchecked(off), "
         "but can be indeterminate if the IsThreeState property is true. You can determine it's state by checking the IsChecked property.");
 
-    FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluAppBarToggleButtonPage.qss", this);
+    FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluAppBarToggleButtonPage.qss", this);
 
     addSymbolIconAppBarButton();
 }
@@ -31,10 +31,10 @@ void FluAppBarToggleButtonPage::onThemeChanged()
 {
     if (FluThemeUtils::isLightTheme())
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluAppBarToggleButtonPage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluAppBarToggleButtonPage.qss", this);
     }
     else
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/dark/FluAppBarToggleButtonPage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/dark/FluAppBarToggleButtonPage.qss", this);
     }
 }

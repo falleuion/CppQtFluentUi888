@@ -141,10 +141,10 @@ void FluAutoSuggestBox::onThemeChanged()
 {
     if (FluThemeUtils::isLightTheme())
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluAutoSuggestBox.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluAutoSuggestBox.qss", this);
     }
     else if (FluThemeUtils::isDarkTheme())
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/dark/FluAutoSuggestBox.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/dark/FluAutoSuggestBox.qss", this);
     }
 }

@@ -66,10 +66,10 @@ void FluLayoutPage::onThemeChanged()
 {
     if (FluThemeUtils::isLightTheme())
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluLayoutPage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluLayoutPage.qss", this);
     }
     else
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/dark/FluLayoutPage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/dark/FluLayoutPage.qss", this);
     }
 }

@@ -40,17 +40,17 @@ FluTextPage::FluTextPage(QWidget* parent /*= nullptr*/) : FluATitlePage(parent)
     getFWScrollView()->getMainLayout()->addWidget(textBoxCard);
     connect(textBoxCard, &FluHCard::clicked, [=](QString key) { emit clickedHCard(key); });
 
-    FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluTextPage.qss", this);
+    FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluTextPage.qss", this);
 }
 
 void FluTextPage::onThemeChanged()
 {
     if (FluThemeUtils::isLightTheme())
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluTextPage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluTextPage.qss", this);
     }
     else
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/dark/FluTextPage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/dark/FluTextPage.qss", this);
     }
 }

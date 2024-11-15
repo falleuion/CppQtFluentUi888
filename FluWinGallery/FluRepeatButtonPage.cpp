@@ -6,7 +6,7 @@ FluRepeatButtonPage::FluRepeatButtonPage(QWidget* parent /*= nullptr*/) : FluAEm
     m_titleLabel->setText("RepeatButton");
     // m_subTitleLabel->setText("CppQtFluentUi888::RepeatButton");
     m_infoLabel->setText("The RepeatButton control is like a standard button, except that the Click event occurs continuously while the user presses the RepeatButton.");
-    FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluRepeatButtonPage.qss", this);
+    FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluRepeatButtonPage.qss", this);
 
     auto displayBox = new FluDisplayBox;
     displayBox->setTitle("A simple RepeatButton with text context.");
@@ -25,10 +25,10 @@ void FluRepeatButtonPage::onThemeChanged()
 {
     if (FluThemeUtils::isLightTheme())
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluRepeatButtonPage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluRepeatButtonPage.qss", this);
     }
     else
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/dark/FluRepeatButtonPage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/dark/FluRepeatButtonPage.qss", this);
     }
 }

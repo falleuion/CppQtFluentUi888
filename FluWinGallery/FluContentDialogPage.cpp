@@ -23,17 +23,17 @@ FluContentDialogPage::FluContentDialogPage(QWidget* parent /*= nullptr*/) : FluA
     displayBox->getBodyLayout()->addWidget(showDlgBtn);
 
     m_vScrollView->getMainLayout()->addWidget(displayBox, 0, Qt::AlignTop);
-    FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluContentDialogPage.qss", this);
+    FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluContentDialogPage.qss", this);
 }
 
 void FluContentDialogPage::onThemeChanged()
 {
     if (FluThemeUtils::isLightTheme())
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/light/FluContentDialogPage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluContentDialogPage.qss", this);
     }
     else
     {
-        FluStyleSheetUitls::setQssByFileName("../StyleSheet/dark/FluContentDialogPage.qss", this);
+        FluStyleSheetUitls::setQssByFileName("./StyleSheet/dark/FluContentDialogPage.qss", this);
     }
 }
