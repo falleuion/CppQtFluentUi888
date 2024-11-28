@@ -29,6 +29,8 @@ class FluMessageBox : public QDialog
 
     bool eventFilter(QObject* obj, QEvent* event);
 
+    void setCancelButtonVisible(bool isVisible);
+
   public slots:
     void onThemeChanged();
 

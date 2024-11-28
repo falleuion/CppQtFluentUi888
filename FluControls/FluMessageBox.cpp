@@ -110,13 +110,18 @@ bool FluMessageBox::eventFilter(QObject* obj, QEvent* event)
 {
     if (obj == m_parentWidget && event->type() == QEvent::Resize)
     {
-        QResizeEvent* resizeEvent = (QResizeEvent*)event;
         m_windowMask->resize(m_parentWidget->size());
         resize(m_parentWidget->size());
         return true;
     }
 
     return QDialog::eventFilter(obj, event);
+}
+
+void FluMessageBox::setCancelButtonVisible(bool isVisible)
+{
+    if (m_cancelBtn)
+        m_cancelBtn->setVisible(isVisible);
 }
 
 void FluMessageBox::onThemeChanged()
