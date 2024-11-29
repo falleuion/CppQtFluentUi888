@@ -10,7 +10,7 @@
 
 FluWindowKitWidget::FluWindowKitWidget(QWidget *parent /*= nullptr*/) : QWidget(parent)
 {
-    setWindowIcon(QIcon("../res/Tiles/GalleryIcon.ico"));
+    setWindowIcon(QIcon("./res/Tiles/GalleryIcon.ico"));
     setWindowTitle("windowkit widget");
     resize(800, 600);
 

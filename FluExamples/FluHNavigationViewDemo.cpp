@@ -17,7 +17,7 @@ FluHNavigationViewDemo::FluHNavigationViewDemo(QWidget* parent /*= nullptr*/) : 
     setWindowTitle("CppQt WinUI3 Navigation Demo");
 #endif
 
-    setWindowIcon(QIcon("../res/Tiles/GalleryIcon.ico"));
+    setWindowIcon(QIcon("./res/Tiles/GalleryIcon.ico"));
     m_titleBar->chromePalette()->setTitleBarActiveBackgroundColor(Qt::transparent);
     m_titleBar->chromePalette()->setTitleBarInactiveBackgroundColor(Qt::transparent);
     m_titleBar->chromePalette()->setTitleBarActiveForegroundColor(Qt::black);

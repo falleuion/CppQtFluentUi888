@@ -41,8 +41,8 @@ FluAEmptyPage::FluAEmptyPage(QWidget* parent /*= nullptr*/) : FluWidget(parent)
     tileWraHLayout->addWidget(documentationBtn, Qt::AlignLeft);
 
     auto sourceBtn = new FluDropDownButton;
-    sourceBtn->setIcon(FluIconUtils::getSvgIcon("../res/HomeHeaderTiles/github-mark.svg"));
-    sourceBtn->setSvgPath("../res/HomeHeaderTiles/github-mark.svg", "../res/HomeHeaderTiles/github-mark-white.svg");
+    sourceBtn->setIcon(FluIconUtils::getSvgIcon("./res/HomeHeaderTiles/github-mark.svg"));
+    sourceBtn->setSvgPath("./res/HomeHeaderTiles/github-mark.svg", "./res/HomeHeaderTiles/github-mark-white.svg");
     sourceBtn->setText("Source");
     sourceBtn->setFixedWidth(120);
     tileWraHLayout->addWidget(sourceBtn, Qt::AlignLeft);

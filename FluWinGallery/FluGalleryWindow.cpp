@@ -18,7 +18,7 @@ FluGalleryWindow::FluGalleryWindow(QWidget *parent /*= nullptr*/) : FluFrameLess
     setWindowTitle("CppQt WinUI3 Gallery");
 #endif
 
-    setWindowIcon(QIcon("../res/Tiles/GalleryIcon.ico"));
+    setWindowIcon(QIcon("./res/Tiles/GalleryIcon.ico"));
 
     // resize
     resize(1200, 800);

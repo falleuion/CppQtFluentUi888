@@ -1,6 +1,8 @@
 #include "FluComboBoxEx.h"
 
-FluComboBoxEx::FluComboBoxEx(QWidget* parent /*= nullptr*/) : FluWidget(parent)
+FluComboBoxEx::FluComboBoxEx(QWidget *parent /*= nullptr*/)
+    : FluWidget(parent)
+    , m_currentIdx(0)
 {
     // m_nMaxTextLen = 0;
     m_textAwesomeType = FluAwesomeType::None;
@@ -44,7 +46,7 @@ FluComboBoxEx::FluComboBoxEx(QWidget* parent /*= nullptr*/) : FluWidget(parent)
 
     // FluStyleSheetUitls::setQssByFileName("./StyleSheet/light/FluComboBoxEx.qss", this);
 
-    connect(m_menu, &FluMenu::triggered, [=](QAction* action) {
+    connect(m_menu, &FluMenu::triggered, [=](QAction *action) {
         m_textBtn->setText(action->text());
         emit currentTextChanged(action->text());
         int nIndex = 0;
@@ -58,17 +60,18 @@ FluComboBoxEx::FluComboBoxEx(QWidget* parent /*= nullptr*/) : FluWidget(parent)
             nIndex++;
         }
         emit currentIndexChanged(nIndex);
+        m_currentIdx = nIndex;
     });
 
     onThemeChanged();
 }
 
-QPushButton* FluComboBoxEx::getTextBtn()
+QPushButton *FluComboBoxEx::getTextBtn()
 {
     return m_textBtn;
 }
 
-QPushButton* FluComboBoxEx::getIconBtn()
+QPushButton *FluComboBoxEx::getIconBtn()
 {
     return m_iconBtn;
 }
@@ -104,36 +107,49 @@ void FluComboBoxEx::setText(QString text)
     m_textBtn->setText(text);
 }
 
-void FluComboBoxEx::addItem(QString text)
+void FluComboBoxEx::addItem(const QString &text, const QVariant &data)
 {
-    addTextItem(text);
+    addTextItem(text, data);
 }
 
-void FluComboBoxEx::addItem(FluAwesomeType type, QString text)
+void FluComboBoxEx::addItem(FluAwesomeType type, const QString &text, const QVariant &data)
 {
-    addIconTextItem(type, text);
+    addIconTextItem(type, text, data);
 }
 
-void FluComboBoxEx::addTextItem(QString text)
+void FluComboBoxEx::addTextItem(const QString &text, const QVariant &data)
 {
-    m_menu->addAction(new FluAction(text));
+    FluAction *action = new FluAction(text);
+    action->setData(data);
+    m_menu->addAction(action);
     if (m_menu->actions().size() == 1)
         m_textBtn->setText(text);
 }
 
-void FluComboBoxEx::addIconTextItem(FluAwesomeType type, QString text)
+void FluComboBoxEx::addIconTextItem(FluAwesomeType type, const QString &text, const QVariant &data)
 {
-    m_menu->addAction(new FluAction(type, text));
+    FluAction *action = new FluAction(type, text);
+    action->setData(data);
+    m_menu->addAction(action);
     if (m_menu->actions().size() == 1)
         m_textBtn->setText(text);
 }
 
-void FluComboBoxEx::mouseReleaseEvent(QMouseEvent* e)
+QVariant FluComboBoxEx::currentItemData() const
+{
+    QVariant result;
+    auto actions =  m_menu->actions();
+    if (m_currentIdx >= 0 && m_currentIdx < actions.size())
+        result = actions[m_currentIdx]->data();
+    return result;
+}
+
+void FluComboBoxEx::mouseReleaseEvent(QMouseEvent *e)
 {
     emit clicked();
 }
 
-void FluComboBoxEx::paintEvent(QPaintEvent* event)
+void FluComboBoxEx::paintEvent(QPaintEvent *event)
 {
     QStyleOption opt;
     opt.initFrom(this);

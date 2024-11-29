@@ -24,13 +24,15 @@ class FluComboBoxEx : public FluWidget
 
     void setText(QString text);
 
-    void addItem(QString text);
+    void addItem(const QString& text, const QVariant& data = QVariant());
 
-    void addItem(FluAwesomeType type, QString text);
+    void addItem(FluAwesomeType type, const QString& text, const QVariant& data = QVariant());
 
-    void addTextItem(QString text);
+    void addTextItem(const QString& text, const QVariant& data = QVariant());
 
-    void addIconTextItem(FluAwesomeType type, QString text);
+    void addIconTextItem(FluAwesomeType type, const QString& text, const QVariant& data = QVariant());
+
+    QVariant currentItemData() const;
 
     void mouseReleaseEvent(QMouseEvent* e);
 
@@ -51,6 +53,7 @@ class FluComboBoxEx : public FluWidget
 
     QHBoxLayout* m_hMainLayout;
     FluMenu* m_menu;
+    int m_currentIdx;
 
     //  QString m_sText;
 };
