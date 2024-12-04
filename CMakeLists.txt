@@ -56,10 +56,10 @@ include(InstallRequiredSystemLibraries)
 set(CPACK_GENERATOR "ZIP")
 include(CPack)
 
-message(STATUS "Configuration Options Summary --
-    Target system:          ${CMAKE_SYSTEM}
-    Compiler:
-        Build type:         ${CMAKE_BUILD_TYPE}
-        C compiler:         ${CMAKE_C_COMPILER}
-        Qt version:         ${QT_DEFAULT_MAJOR_VERSION}
-        Qt toolchain:       ${QT_QMAKE_EXECUTABLE}")
+# message(STATUS "Configuration Options Summary --
+#     Target system:          ${CMAKE_SYSTEM}
+#     Compiler:
+#         Build type:         ${CMAKE_BUILD_TYPE}
+#         C compiler:         ${CMAKE_C_COMPILER}
+#         Qt version:         ${QT_DEFAULT_MAJOR_VERSION}
+#         Qt toolchain:       ${QT_QMAKE_EXECUTABLE}")

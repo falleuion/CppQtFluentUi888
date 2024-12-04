@@ -9,11 +9,11 @@ FILE(GLOB DIR_SRCS RELATIVE ${CMAKE_CURRENT_SOURCE_DIR}
     "*.cpp"
 )
 
-message("qt_add_library(\${TGT} STATIC")
-    foreach(f ${DIR_SRCS})
-    message("    \"${f}\"")
-    endforeach()
-message(")")
+# message("qt_add_library(\${TGT} STATIC")
+#     foreach(f ${DIR_SRCS})
+#     message("    \"${f}\"")
+#     endforeach()
+# message(")")
 
 if (${QT_VERSION_MAJOR} LESS 6)
     add_library(${TGT}

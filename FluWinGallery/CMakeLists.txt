@@ -9,11 +9,11 @@ FILE(GLOB DIR_SRCS RELATIVE ${CMAKE_CURRENT_SOURCE_DIR}
     "*.cpp"
 )
 
-message("add_library(\${TGT} SHARED")
-    foreach(f ${DIR_SRCS})
-    message("    \"${f}\"")
-    endforeach()
-message(")")
+# message("add_library(\${TGT} SHARED")
+#     foreach(f ${DIR_SRCS})
+#     message("    \"${f}\"")
+#     endforeach()
+# message(")")
 
 # qt_add_executable(${TGT}
 #     ${DIR_SRCS}
